@@ -1,0 +1,30 @@
+# action.yml
+name: 'Upload SP'
+description: 'Upload a file to SP'
+inputs:
+  repo_url:
+    description: 'url to repo'
+    required: true
+    default: '** REPO_MISSING **'
+  private_key:
+    description: 'private key for access'
+    required: true
+    default: '** KEY_MISSING **'
+  user_name:
+    description: 'name of user'
+    required: true
+    default: '** USER_NAME_MISSING **'
+  user_email:
+    description: 'email adress of user'
+    required: true
+    default: '** EMAIL_MISSING **'
+  comment:
+    description: 'comment for commit'
+    required: false
+    default: '** PUSHING FOLDER **'
+outputs:
+  web_url:
+    description: 'The url of the uploaded file'
+runs:
+  using: 'docker'
+  image: 'dockerfile'
