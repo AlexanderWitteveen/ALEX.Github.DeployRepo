@@ -22,6 +22,9 @@ inputs:
     description: 'comment for commit'
     required: false
     default: '** PUSHING FOLDER **'
+  tag:
+    description: 'tag for commit'
+    required: false
 outputs:
   web_url:
     description: 'The url of the uploaded file'
