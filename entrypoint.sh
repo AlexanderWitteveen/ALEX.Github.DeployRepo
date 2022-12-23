@@ -29,13 +29,8 @@ git add -A
 if [[ ! -z "$INPUT_TAG" ]]; then
     git tag "$INPUT_TAG"
     echo $?
-
-    if [[ $? ]]; then
-        echo test1
-    fi
-
-    if [[ ! $? ]]; then
-        echo test2
+    if [[ $? -gt 0 ]]; then
+        exit 1
     fi
 fi
 git commit -m "$INPUT_COMMENT"
