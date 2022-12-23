@@ -33,4 +33,3 @@ git commit -m "$INPUT_COMMENT"
 git push --tags origin main
 
 exit 0
-
