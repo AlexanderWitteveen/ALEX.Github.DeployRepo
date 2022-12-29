@@ -18,7 +18,7 @@ find $repopath/* -maxdepth 1 | grep -v ".git"
 
 find $repopath/* -maxdepth 1 | grep -v ".git" | xargs rm -rf
 
-cp -r ./src/* $repopath
+cp -r $INPUT_SOURCE/* $repopath
 
 ls -las $repopath
 

@@ -22,6 +22,10 @@ inputs:
     description: 'comment for commit'
     required: false
     default: '** PUSHING FOLDER **'
+  source:
+    description: 'source folder for commit'
+    required: true
+    default: '.\src'
   tag:
     description: 'tag for commit'
     required: false
