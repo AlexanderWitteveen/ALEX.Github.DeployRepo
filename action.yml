@@ -1,6 +1,6 @@
 # action.yml
-name: 'Upload SP'
-description: 'Upload a file to SP'
+name: 'Upload Github'
+description: 'Upload a file to Github'
 inputs:
   repo_url:
     description: 'url to repo'
