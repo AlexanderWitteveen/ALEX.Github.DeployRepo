@@ -26,6 +26,7 @@ cd $repopath
 git config --global user.name "$INPUT_USER_NAME"
 git config --global user.email "$INPUT_USER_EMAIL"
 git add -A
+git commit -m "$INPUT_COMMENT"
 if [[ ! -z "$INPUT_TAG" ]]; then
     git tag "$INPUT_TAG"
     echo $?
@@ -33,7 +34,6 @@ if [[ ! -z "$INPUT_TAG" ]]; then
         exit 1
     fi
 fi
-git commit -m "$INPUT_COMMENT"
 git push --tags origin main
 
 exit 0
